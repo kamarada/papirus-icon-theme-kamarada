@@ -5,7 +5,7 @@
 pkgbase=papirus-icon-theme
 pkgname=('papirus-icon-theme' 'epapirus-icon-theme')
 pkgver=20231201
-pkgrel=1
+pkgrel=2
 pkgdesc="Papirus icon theme"
 arch=('any')
 url="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme"
