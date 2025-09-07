@@ -1,0 +1,22 @@
+diff --git a/tools/build_color_folders.sh b/tools/build_color_folders.sh
+index 167b29b7b4..6b27bfae4d 100755
+--- a/tools/build_color_folders.sh
++++ b/tools/build_color_folders.sh
+@@ -33,7 +33,7 @@ set -eo pipefail
+ SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
+ TARGET_DIR="$SCRIPT_DIR/../Papirus"
+ 
+-DEFAULT_COLOR="blue"
++DEFAULT_COLOR="kamarada"
+ SIZES_REGEX="(16x16|22x22|24x24|32x32|48x48|64x64)"
+ COLOR_SIZES_REGEX="(22x22|24x24|32x32|48x48|64x64)"
+ FILES_REGEX="(folder|user)-"
+@@ -120,7 +120,7 @@ find "$TARGET_DIR" -type f -regextype posix-extended \
+ 	target="$(basename "$file")"
+ 	symlink="${file/-$DEFAULT_COLOR/}"
+ 
+-	[ -e "$symlink" ] && continue
++	#[ -e "$symlink" ] && continue
+ 
+ 	msg "Creating missing symlink '$symlink' ..."
+ 	ln -sf "$target" "$symlink"

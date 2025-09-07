@@ -1,0 +1,38 @@
+diff --git a/tools/build_color_folders.sh b/tools/build_color_folders.sh
+index 167b29b7b4..8f6d242d17 100755
+--- a/tools/build_color_folders.sh
++++ b/tools/build_color_folders.sh
+@@ -61,12 +61,33 @@ COLORS=(
+ 	[green]="     #87b158 #60924b #2f3e1f #e4e4e4"
+ 	[grey]="      #8e8e8e #727272 #323232 #e4e4e4"
+ 	[indigo]="    #5c6bc0 #3f51b5 #202543 #e4e4e4"
++
++	# Material Design Colors:
++	# https://material.io/design/color/the-color-system.html
++	# Primary color: Green 600 - #43a047
++	# Secondary color: Green 800 - #2e7d32
++	[kamarada]="  #43a047 #2e7d32 #1d344f #e4e4e4"
++
+ 	[magenta]="   #ca71df #b259b8 #47274e #e4e4e4"
++
++	# openSUSE Colors:
++	# https://en.opensuse.org/Help:Colors
++	# Primary color: Dark Cyan - #00a489
++	# Secondary color: -15% darker, following Papirus Kolorizer recommendation - #006655
++	[opensuse]="  #00a489 #006655 #1d344f #e4e4e4"
++
+ 	[orange]="    #ee923a #dd772f #533314 #e4e4e4"
+ 	[palebrown]=" #d1bfae #bea389 #a38d7b #e4e4e4"
+ 	[paleorange]="#eeca8f #c89e6b #917359 #e4e4e4"
+ 	[pink]="      #f06292 #ec407a #542233 #e4e4e4"
+ 	[red]="       #e25252 #bf4b4b #4f1d1d #e4e4e4"
++
++	# SUSE Colors:
++	# https://brand.suse.com/brand-system/color-palette
++	# Primary color: Jungle - #30ba78
++	# Secondary color: Pine - #0c322c
++	[suse]="      #30ba78 #0c322c #1d344f #e4e4e4"
++
+ 	[teal]="      #16a085 #12806a #08382e #e4e4e4"
+ 	[violet]="    #7e57c2 #5d399b #2c1e44 #e4e4e4"
+ 	[white]="     #e4e4e4 #cccccc #4f4f4f #ffffff"
