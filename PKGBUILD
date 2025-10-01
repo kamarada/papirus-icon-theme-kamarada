@@ -6,7 +6,7 @@
 pkgname=papirus-icon-theme-kamarada
 pkgbase=papirus-icon-theme
 pkgver=20250501
-pkgrel=1
+pkgrel=2
 pkgdesc="Papirus icon theme - Kamarada fork"
 arch=('any')
 url="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme"
@@ -30,13 +30,13 @@ sha512sums=(
 options+=(!strip)
 
 prepare() {
-
-  cd $pkgbase-$pkgver
+  cd "$pkgbase-$pkgver"
   mkdir -p tools
   cp ../build_color_folders.sh tools/
   chmod +x tools/build_color_folders.sh
   patch -p1 -i ../add-colors.patch
   patch -p1 -i ../change-default-color.patch
+  ./tools/build_color_folders.sh
 }
 
 package() {
